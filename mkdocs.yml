@@ -1,0 +1,50 @@
+site_name: Latiete 的小站
+site_url: https://sitename.example
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+
+  font:
+    text: Merriweather Sans
+    code: Red Hat Mono
+
+  features:
+    - navigation.footer
+
+  
+
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark Mode
+      primary: green #主题颜色
+      accent: deep purple #强调色
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light Mode
+      primary: blue #主题颜色
+      accent: deep orange #强调色
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  
+copyright: Copyright &copy; 2025 Yang Zhiheng
