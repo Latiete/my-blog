@@ -1,9 +1,10 @@
 name: ci
 on:
-  push:
-    branches:
-      - master
-      - main
+  workflow_dispatch: # 用于手动触发
+  #push:
+    #branches:
+      #- master
+      #- main
 permissions:
   contents: write
 jobs:
