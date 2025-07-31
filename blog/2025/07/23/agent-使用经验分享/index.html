@@ -10,11 +10,11 @@
         <meta name="author" content="杨志恒">
       
       
-        <link rel="canonical" href="https://sitename.example/blog/2025/07/31/agent-%E7%94%9F%E6%88%90-uml-%E5%9B%BE/">
+        <link rel="canonical" href="https://sitename.example/blog/2025/07/23/agent-%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/">
       
       
-        <link rel="prev" href="../agent-%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/">
       
+        <link rel="next" href="../../25/agent-%E7%94%9F%E6%88%90-uml-%E5%9B%BE/">
       
       
       <link rel="icon" href="../../../../../assets/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Agent 生成 UML 图 - Latiete 的小站</title>
+        <title>Agent 使用经验分享 - Latiete 的小站</title>
       
     
     
@@ -55,7 +55,16 @@
     
     
     
-  </head>
+   <link href="../../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -74,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#agent-uml" class="md-skip">
+        <a href="#agent" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Agent 生成 UML 图
+              Agent 使用经验分享
             
           </span>
         </div>
@@ -303,7 +312,7 @@
   
   
   <span class="md-ellipsis">
-    Blog
+    博客目录
     
   </span>
   
@@ -421,9 +430,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1prompt" class="md-nav__link">
     <span class="md-ellipsis">
-      1.实践背景
+      1.Prompt 设计
     </span>
   </a>
   
@@ -432,84 +441,18 @@
         <li class="md-nav__item">
   <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
-      2.前置环境
+      2.「协作」而非「索取」
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3whats-more" class="md-nav__link">
     <span class="md-ellipsis">
-      3.效果展示
+      3.What's more......
     </span>
   </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
-    <span class="md-ellipsis">
-      4.工作流程
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4.工作流程">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-prompt" class="md-nav__link">
-    <span class="md-ellipsis">
-      1) 绘图 Prompt
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      2) 交互调整
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      3) 实践经验
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3) 实践经验">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#auml" class="md-nav__link">
-    <span class="md-ellipsis">
-      a.UML 图的种类与颗粒度
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#b" class="md-nav__link">
-    <span class="md-ellipsis">
-      b.图片保存问题
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -550,7 +493,7 @@
                     <li class="md-nav__item">
                       <div class="md-nav__link">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 19H5V8h14m-3-7v2H8V1H6v2H5c-1.11 0-2 .89-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-1V1m-1 11h-5v5h5z"/></svg>
-                        <time datetime="2025-07-31 00:00:00+00:00" class="md-ellipsis">July 31, 2025</time>
+                        <time datetime="2025-07-23 00:00:00+00:00" class="md-ellipsis">July 23, 2025</time>
                       </div>
                     </li>
                     
@@ -569,7 +512,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
                           <span class="md-ellipsis">
                             
-                              15 min read
+                              5 min read
                             
                           </span>
                         </div>
@@ -593,36 +536,43 @@
 
 
 
-<h1 id="agent-uml">Agent 生成 UML 图</h1>
-<p>本文介绍本人利用 Agent 生成 UML 图的实践经验。</p>
+<h1 id="agent">Agent 使用经验分享</h1>
+<p>分享本人在使用 Agent 过程中的经验与收获。</p>
 <!-- more -->
 
-<h2 id="1">1.实践背景</h2>
-<p>7 月 21 组内周会上，leader 建议绘制一个项目的时序图，展示各个系统之间的交互，方便快速了解项目的流程。于是自己尝试利用 Agent 来协助制作了一个时序图，这篇文章用来分享一下利用 Agent 绘制各种 UML 图的实践经验。</p>
-<h2 id="2">2.前置环境</h2>
-<p>(1)Intellij IDEA<br />
-(2)plantuml4idea 插件<br />
-(3)Agent 插件，如：Cursor<br />
-(4)模型选择: claude-sonnet-4  </p>
-<p><img alt="plantuml4idea" src="../../../../../assets/plantuml4idea.png" /></p>
-<div class="admonition info">
-<p class="admonition-title">注意</p>
-<p>其中 plantuml4idea 插件需要 Graphviz 的支持，Windows 系统下载插件后就自带 Graphviz，但 Mac 系统需要自行安装，如果已经安装了安装包管理器 Homebrew，可以直接在终端输入:
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>brew<span class="w"> </span>install<span class="w"> </span>graphviz
-</span></code></pre></div>
-安装完成后，可以通过以下命令验证：
-<div class="language-shell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>dot<span class="w"> </span>-V
-</span></code></pre></div>
-输出如图所示：
-<img alt="dot-V" src="../../../../../assets/dot-V.png" /></p>
+<h2 id="1prompt">1.Prompt 设计</h2>
+<p>在 Prompt 工程中，有一个非常重要的第一性原理——Prompt 存在第一性原理：</p>
+<p>「<strong>输入</strong>」是否影响「<strong>输出</strong>」？</p>
+<p>换句话说，如果你的 Prompt 存在与否都不影响模型的输出，那说明模型已经在训练阶段内化了该 Prompt 的内容或相关能力，此时该 Prompt 对模型来说是“冗余”的，甚至可以视为“无效”的。</p>
+<p>这就引出了一个核心问题——我们与 AI 之间，到底有哪些信息是彼此都清楚的，又有哪些是彼此不了解的？ 不同的信息边界，会直接决定我们如何设计 Prompt，如何与 AI 沟通。</p>
+<p>为了更好地理解人与 AI 之间的信息分布和沟通方式，我们可以借用心理学中的<strong>乔哈里视窗</strong>模型：</p>
+<figure>
+  <a class="glightbox" href="../../../../../assets/%E4%B9%94%E5%93%88%E9%87%8C%E8%A7%86%E7%AA%97.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="乔哈里视窗" src="../../../../../assets/%E4%B9%94%E5%93%88%E9%87%8C%E8%A7%86%E7%AA%97.png" /></a>
+<br />
+<figcaption>乔哈里视窗</figcaption>
+</figure>
+<p>乔哈里视窗本来是用来帮助我们理解“自我”在自己和他人眼中的不同维度，利用自己知道与否、别人知道与否，把自我认知划分为四个区域：开放区（自己知道，别人知道）、盲区（自己不知道，别人知道）、隐私区（自己知道，别人不知道）、未知区（自己不知道，别人不知道），以及各个区域的内容需要怎么与他人沟通来对齐颗粒度。</p>
+<p>类比到人与 AI 也是一样的，可以根据人与 AI 对知识的知道与否，将知识划分为四个象限，在这四个象限内如何与 AI 沟通可以通俗的总结为：简单说（第一象限）、提问题（第二象限）、开放聊（第三象限）、展开说（第四象限）。</p>
+<p><strong>那么该如何设计 Prompt？</strong>（1）对于第一象限，人与 AI 都清楚，不需要多费口舌，也就不需要复杂的 Prompt，只需要简单地向 AI 描述即可；（2）在第二象限，则需要用提问的方式去设计 Prompt；（3）在第三象限则不需要那么注意 Prompt 的结构，尽管大胆开放聊吧！（4）而对于第四象限，由于 AI 并不知道我们的知识内容，所以我们需要将 Prompt 设计得尽可能详细，以让 AI 知晓更多内容。</p>
+<p>从体感上以及事实上来说，乔哈里视窗（AI 版）的 X 轴是在不断下移的，AI 知道的越来越多，Prompt 的结构越来越简单，但是 X 轴永远也不会触底，因为有些数据是 AI 始终获取不到的，比如美团内部不对外公开的数据，这部分数据是未来亟待发掘的“金矿”。而 Y 轴是在如何变化的呢？就留给大家自己去思考了～</p>
+<div class="admonition note">
+<p class="admonition-title">思考</p>
+<p>个人对于 Y 轴的变化有一些思考，作为抛砖引玉。<br />
+我认为当前所有人类在 Y 轴上是一个正态分布的情况，而随着 AI 时代的快速发展，这个正态分布会变成 2 个极端，成为一个马鞍形分布。<br />
+只知道使用 AI 不加以思考的人，会往左边的极端移动，而在使用 AI 的同时，不断思考索取进取，利用 AI 扩大自己的优势的人，将会向右边的极端移动。<br />
+<em>“AI 不会替代产品人，但会用 AI 的产品人会替代不用 AI 的人。”</em></p>
 </div>
-<h2 id="3">3.效果展示</h2>
-<h2 id="4">4.工作流程</h2>
-<h3 id="1-prompt">1) 绘图 Prompt</h3>
-<h3 id="2_1">2) 交互调整</h3>
-<h3 id="3_1">3) 实践经验</h3>
-<h4 id="auml">a.UML 图的种类与颗粒度</h4>
-<h4 id="b">b.图片保存问题</h4>
+<p>显然我们的流程图也是属于乔哈里视图的第四象限，对于“展开说”，如何具体地设计一个好的 Prompt，这里引用 AI 进化论课程的 PPT：</p>
+<p><a class="glightbox" href="../../../../../assets/AI%E8%BF%9B%E5%8C%96%E8%AE%BA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="AI 进化论" src="../../../../../assets/AI%E8%BF%9B%E5%8C%96%E8%AE%BA.png" /></a></p>
+<h2 id="2">2.「协作」而非「索取」</h2>
+<p>在日常使用 AI 时，我们往往只是把它当作一个工具，单纯地用来完成各类需求。这样的使用方式，容易让我们忽略自身的思考，机械地提出问题，采纳 AI 给出的方案，可以说是一种<strong>「索取」</strong>的形式，这其实是一种不健康的 AI 使用方式，不仅限制了我们自身能力的提升，也难以真正发挥 AI 与人的协同价值。</p>
+<p>我认为，在使用 AI 的过程中，我们应当秉持<strong>「协作」</strong>的态度，把 AI 当作真正的<strong>协作伙伴/同事</strong>来看待，并以与同事沟通的高标准与 AI 进行交流。</p>
+<p>首先，提问时要站在同事的角度，思考如何让对方更清楚地理解自己的需求，这样 AI 才能更好地回应和帮助我们。其次，在 AI 回答过程中，我们应像认真听同事汇报一样，仔细阅读其输出，主动思考并学习内容，遇到不懂的地方及时追问，确保自己真正获得成长和收获。此外，协作往往需要多轮沟通来达成共识。与 AI 互动时，也要有对齐的意识：AI 可能会出错，正如人一样，我们要及时指出问题，进行修改和微调，并在对话中持续提供反馈和补充信息，让 AI 的输出与我们的需求不断对齐，达到最佳协作效果。</p>
+<p>通过协作，AI 与使用者形成了一个动态的工作生态，实现了技术与人的完美结合，创造出超越单独使用任何一方能力的综合效益。</p>
+<h2 id="3whats-more">3.What's more......</h2>
+<p>除了我个人分享的这两点，还有很多使用 AI 的思维框架和小技巧，欢迎大家来分享自己的经验～</p>
+<p>这里分享一篇写的不错的关于 AI 编程的文章：<a href="https://mp.weixin.qq.com/s/dAknYxHhGd0xDNqn9cB73Q">AI写代码的“上下文陷阱”：为什么AI总是写错？如何系统性解决？</a></p>
+<p>感谢阅读！</p>
 
 
 
@@ -658,22 +608,22 @@
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
+        
           
-          <a href="../agent-%E4%BD%BF%E7%94%A8%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Agent 使用经验分享">
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-            </div>
+          <a href="../../25/agent-%E7%94%9F%E6%88%90-uml-%E5%9B%BE/" class="md-footer__link md-footer__link--next" aria-label="Next: Agent 生成 UML 图">
             <div class="md-footer__title">
               <span class="md-footer__direction">
-                Previous
+                Next
               </span>
               <div class="md-ellipsis">
-                Agent 使用经验分享
+                Agent 生成 UML 图
               </div>
             </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
           </a>
-        
         
       </nav>
     
@@ -706,11 +656,13 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.footer"], "search": "../../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../../..", "features": ["navigation.footer", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../../../../assets/javascripts/bundle.50899def.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
