@@ -1,5 +1,10 @@
 site_name: Latiete 的小站
 site_url: https://sitename.example
+
+plugins:
+    - search
+    - blog
+
 theme:
   name: material
   logo: assets/logo.png
@@ -11,8 +16,6 @@ theme:
 
   features:
     - navigation.footer
-
-  
 
   palette:
     # Dark Mode

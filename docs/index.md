@@ -1,77 +1,11 @@
-# Welcome to MkDocs
+# 欢迎来到 Latiete 的小站～:blush:
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Q: 你是？
 
-## Commands
+A: 一名 HIT CSer，大厂实习中，RPG 爱好者，最爱 Fallout: New Veges:video_game:。
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Q: 这里是？
 
-## Project layout
+A: 我的个人网站，用于发布个人博客:book:。
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-
-```py linenums="1" title="add_numbers.py"
-# Function to add two numbers
-def add_two_numbers(num1, num2):
-    return num1 + num2
-
-# Example usage
-result = add_two_numbers(5, 3)
-print('The sum is:', result)
-```
-```java linenums="1" title="HelloWorld.java"
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
-
-=== "Plain text"
-
-    This is some plain text
-
-=== "Unordered list"
-
-    * First item
-    * Second item
-    * Third item
-
-=== "Ordered list"
-
-    1. First item
-    2. Second item
-    3. Third item
-
-ddd
-=== "Python"
-
-    ```py
-    def main():
-        print("Hello world!")
-
-    if __name__ == "__main__":
-        main()
-    ```
-
-=== "JavaScript"
-
-    ```js
-    function main() {
-        console.log("Hello world!");
-    }
-
-    main();
-    ```
-
-!!! note "示例"
-	这是一段测试文本
-
-??? info "示例"
-	这是一段测试文本
+![辐射：新维加斯](assets/fallout-new-veges.png)
