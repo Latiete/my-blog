@@ -622,7 +622,7 @@
 (2)plantuml4idea 插件<br />
 (3)Agent 插件，如：Cursor<br />
 (4)模型选择: claude-sonnet-4  </p>
-<p><a class="glightbox" href="../../../../../assets/plantuml4idea.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="plantuml4idea" src="../../../../../assets/plantuml4idea.png" /></a></p>
+<p><a class="glightbox" href="../../../../blog-images/blog-1/plantuml4idea.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="plantuml4idea" src="../../../../blog-images/blog-1/plantuml4idea.png" /></a></p>
 <div class="admonition info">
 <p class="admonition-title">注意</p>
 <p>其中 plantuml4idea 插件需要 Graphviz 的支持，Windows 系统下载插件后就自带 Graphviz，但 Mac 系统需要自行安装，如果已经安装了安装包管理器 Homebrew，可以直接在终端输入:
@@ -632,11 +632,11 @@
 <div class="language-shell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>dot<span class="w"> </span>-V
 </span></code></pre></div>
 输出如图所示：
-<a class="glightbox" href="../../../../../assets/dot-V.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="dot-V" src="../../../../../assets/dot-V.png" /></a></p>
+<a class="glightbox" href="../../../../blog-images/blog-1/dot-V.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="dot-V" src="../../../../blog-images/blog-1/dot-V.png" /></a></p>
 </div>
 <h2 id="3">3.效果展示</h2>
 <figure>
-  <a class="glightbox" href="../../../../../assets/s-pay-mall-mvc.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="效果展示图" src="../../../../../assets/s-pay-mall-mvc.svg" /></a>
+  <a class="glightbox" href="../../../../blog-images/blog-1/s-pay-mall-mvc.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="效果展示图" src="../../../../blog-images/blog-1/s-pay-mall-mvc.svg" /></a>
 <br />
 <figcaption>效果展示图</figcaption>
 </figure>
@@ -650,10 +650,10 @@
 </span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>（2）受众是业务或产品人员，不具备系统的研发知识，图里的元素要通俗易懂。  
 </span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>2.代码：项目代码（最好是把整个项目代码加上，拖动模块即可：client、dao、service、web、pom.xml）。
 </span></code></pre></div>
-<a class="glightbox" href="../../../../../assets/Prompt.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Prompt" src="../../../../../assets/Prompt.png" /></a></p>
+<a class="glightbox" href="../../../../blog-images/blog-1/Prompt.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Prompt" src="../../../../blog-images/blog-1/Prompt.png" /></a></p>
 <h3 id="2_1">2) 交互调整</h3>
 <p>提交之后 Agent 就会生成 <code>puml</code> 文件，然后利用 plantuml4idea 插件就可以进行展示，有时会出现一些语法问题以及图片效果问题，可以通过与 AI 交互 + 自己调整来解决，AI 有时候不能解决问题，需要自己进行调整。
-<a class="glightbox" href="../../../../../assets/%E6%8F%92%E4%BB%B6%E6%BC%94%E7%A4%BA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="插件演示" src="../../../../../assets/%E6%8F%92%E4%BB%B6%E6%BC%94%E7%A4%BA.png" /></a></p>
+<a class="glightbox" href="../../../../blog-images/blog-1/%E6%8F%92%E4%BB%B6%E6%BC%94%E7%A4%BA.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="插件演示" src="../../../../blog-images/blog-1/%E6%8F%92%E4%BB%B6%E6%BC%94%E7%A4%BA.png" /></a></p>
 <h3 id="3_1">3) 实践经验</h3>
 <h4 id="auml">a.UML 图的种类</h4>
 <p>UML 图的种类参见 <a href="https://plantuml.com/zh/">PlantUML 官方主页</a>或 <a href="https://github.com/plantuml/plantuml">PlantUML Github 主页</a>。</p>
@@ -661,15 +661,15 @@
 <p>UML 图的颗粒度可以通过修改<a href="#绘图-Prompt">绘图 Prompt</a> 来实现，尽量描述清楚自己的需求，也可以通过多轮交互来丰富 AI 所获得的上下文，此时一个简单的 Prompt 也能获得非常详细的 UML 图。</p>
 <h4 id="c">c.图片保存问题</h4>
 <p>PlantUML插件提供了 2 种保存图片的方式：(1)图片保存功能；(2)复制到剪贴板功能：</p>
-<p><a class="glightbox" href="../../../../blog-images/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="图片保存-1" src="../../../../blog-images/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-1.png" /></a></p>
+<p><a class="glightbox" href="../../../../blog-images/blog-1/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="图片保存-1" src="../../../../blog-images/blog-1/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-1.png" /></a></p>
 <p>但是保存下来的图片的质量与完整性是与插件界面图片的比例有关的，个人通过实验发现了如何获取最高质量且完整的图片：</p>
-<p><a class="glightbox" href="../../../../blog-images/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="图片保存-2" src="../../../../blog-images/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-2.png" /></a></p>
+<p><a class="glightbox" href="../../../../blog-images/blog-1/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="图片保存-2" src="../../../../blog-images/blog-1/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-2.png" /></a></p>
 <p>在插件的这个地方，点击 <code>+</code> 号，越大越好，然后点击图片保存功能，查看图片，如果不完整，则点击 <code>-</code> 号，再次重复流程（可以采用二分法，一次点击多次 <code>-</code> 号或 <code>+</code> 号），直到某个临界点，会显示完整的图像，并且点击一次 <code>+</code> 号会导致图片不完整，恭喜你～<img alt="🎉" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f389.svg" title=":tada:" />已经得到了这个方法能够获得的最高质量的完整的 UML 图了，这个时候就可以点击图片保存功能来保存 UML 图了。</p>
 <p>随后通过查看设置，发现默认保存的图片是 PNG 格式，并且可以替换成 SVG 格式，这样就能保证一定能获得最高质量的图片了，当然如果想保留最高质量的 PNG 图片仍然可以参照上面的流程<img alt="⬆" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/2b06.svg" title=":arrow_up:" />，设置保存成 SVG 格式流程如下：</p>
-<p><a class="glightbox" href="../../../../blog-images/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="图片保存-3" src="../../../../blog-images/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-3.png" /></a></p>
-<p><a class="glightbox" href="../../../../blog-images/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="图片保存-4" src="../../../../blog-images/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-4.png" /></a></p>
-<p><a class="glightbox" href="../../../../blog-images/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="图片保存-5" src="../../../../blog-images/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-5.png" /></a></p>
-<p><a class="glightbox" href="../../../../blog-images/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="图片保存-6" src="../../../../blog-images/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-6.png" /></a></p>
+<p><a class="glightbox" href="../../../../blog-images/blog-1/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="图片保存-3" src="../../../../blog-images/blog-1/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-3.png" /></a></p>
+<p><a class="glightbox" href="../../../../blog-images/blog-1/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="图片保存-4" src="../../../../blog-images/blog-1/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-4.png" /></a></p>
+<p><a class="glightbox" href="../../../../blog-images/blog-1/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="图片保存-5" src="../../../../blog-images/blog-1/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-5.png" /></a></p>
+<p><a class="glightbox" href="../../../../blog-images/blog-1/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="图片保存-6" src="../../../../blog-images/blog-1/%E5%9B%BE%E7%89%87%E4%BF%9D%E5%AD%98-6.png" /></a></p>
 <p>感谢阅读！</p>
 
 
